@@ -9,11 +9,11 @@ namespace Itunes.Controllers
     [ApiController]
     public class ApiController : ControllerBase
     {
-        private readonly IUpsertItuneClick _upsertItuneClicks;
+        private readonly IRecordClick _recordClick;
 
-        public ApiController(IUpsertItuneClick upsertItuneClick)
+        public ApiController(IRecordClick recordClick)
         {
-            _upsertItuneClicks = upsertItuneClick;
+            _recordClick = recordClick;
         }
 
         [HttpPost]
@@ -23,13 +23,7 @@ namespace Itunes.Controllers
             if (viewModel.CollectionViewUrl == null)
                 return BadRequest();
 
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = viewModel.CollectionViewUrl,
-                UseShellExecute = true
-            });
-
-            _upsertItuneClicks.Execute(viewModel);
+            _recordClick.Execute(viewModel);
 
             return Ok();
         }

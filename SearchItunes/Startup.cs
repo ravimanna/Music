@@ -25,8 +25,8 @@ namespace Itunes
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IRestRepo, RestRepo>();
             services.AddScoped<IGetItunes, GetItunes>();
-            services.AddScoped<IUpsertItuneClick, UpsertItuneClick>();
-            services.AddScoped<IGetItuneClicks, GetItuneClicks>();
+            services.AddScoped<IRecordClick, RecordClick>();
+            services.AddScoped<IGetClicks, GetClicks>();
             services.AddSingleton<IInMemoryRepo, InMemoryRepo>();
             services.Configure<ApiSettings>(Configuration.GetSection("Api"));
             services.AddControllersWithViews();

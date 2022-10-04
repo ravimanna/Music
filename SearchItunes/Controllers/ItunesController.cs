@@ -9,13 +9,13 @@ namespace Itunes.Controllers
 {
     public class ItunesController : Controller
     {
-        private readonly IGetItuneClicks _getItuneClicks;
+        private readonly IGetClicks _getItuneClicks;
         private readonly IGetItunes _getItunes;
-        private readonly IUpsertItuneClick _upsertItuneClicks;
+        private readonly IRecordClick _upsertItuneClicks;
 
         public ItunesController(IGetItunes getItunes,
-            IUpsertItuneClick upsertItuneClick,
-            IGetItuneClicks getItuneClicks)
+            IRecordClick upsertItuneClick,
+            IGetClicks getItuneClicks)
         {
             _getItunes = getItunes;
             _getItuneClicks = getItuneClicks;

@@ -5,16 +5,16 @@ using SearchItunes.Data;
 
 namespace Itunes.Application
 {
-    public interface IGetItuneClicks
+    public interface IGetClicks
     {
         public TransactionResponse<List<ItuneClicks>> Execute();
     }
 
-    public class GetItuneClicks : IGetItuneClicks
+    public class GetClicks : IGetClicks
     {
         private readonly IInMemoryRepo _inMemoryRepo;
 
-        public GetItuneClicks(IInMemoryRepo inMemoryRepo)
+        public GetClicks(IInMemoryRepo inMemoryRepo)
         {
             _inMemoryRepo = inMemoryRepo;
         }
