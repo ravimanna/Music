@@ -19,7 +19,7 @@ namespace Itunes.Controllers
         [Route("ituneClick")]
         public IActionResult ItuneClick(ItunesViewModel viewModel)
         {
-            if (viewModel.CollectionViewUrl == null)
+            if (string.IsNullOrEmpty(viewModel.CollectionViewUrl)) 
                 return BadRequest();
 
             _recordClick.Execute(viewModel);
