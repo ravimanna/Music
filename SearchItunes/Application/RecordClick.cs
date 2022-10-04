@@ -22,7 +22,6 @@ namespace Itunes.Application
 
         public TransactionResponse<ItuneClicks> Execute(ItunesViewModel itunesViewModel)
         {
-
             Process.Start(new ProcessStartInfo
             {
                 FileName = itunesViewModel.CollectionViewUrl,

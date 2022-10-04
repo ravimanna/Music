@@ -10,7 +10,7 @@ namespace Itunes.Test
         }
 
         [Test]
-        public void ItuneClick_WhenWorks_AddsClick()
+        public void ItuneClick_WhenWorks_RecordsClick()
         {
             Assert.Pass();
         }

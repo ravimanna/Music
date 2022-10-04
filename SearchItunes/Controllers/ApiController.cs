@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using Itunes.Application;
+﻿using Itunes.Application;
 using Itunes.Models;
 using Microsoft.AspNetCore.Mvc;
 
