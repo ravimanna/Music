@@ -1,4 +1,4 @@
-﻿namespace SearchItunes.Application.Shared
+﻿namespace Itunes.Application.Shared
 {
     public enum TransactionStatus
     {

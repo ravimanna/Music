@@ -1,4 +1,4 @@
-﻿namespace SearchItunes
+﻿namespace Itunes
 {
     public class ApiSettings
     {

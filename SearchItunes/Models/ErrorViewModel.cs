@@ -1,4 +1,4 @@
-namespace SearchItunes.Models
+namespace Itunes.Models
 {
     public class ErrorViewModel
     {

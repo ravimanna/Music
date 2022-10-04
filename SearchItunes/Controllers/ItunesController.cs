@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 using System.Linq;
+using Itunes.Application;
+using Itunes.Application.Shared;
+using Itunes.Models;
 using Microsoft.AspNetCore.Mvc;
-using SearchItunes.Application;
-using SearchItunes.Application.Shared;
-using SearchItunes.Models;
 
-namespace SearchItunes.Controllers
+namespace Itunes.Controllers
 {
     public class ItunesController : Controller
     {

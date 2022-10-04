@@ -1,4 +1,4 @@
-﻿namespace SearchItunes.Data
+﻿namespace Itunes.Data
 {
     public class RepoResponse<T>
     {

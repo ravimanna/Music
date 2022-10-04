@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using SearchItunes.Application.Shared;
+using Itunes.Application.Shared;
+using Itunes.Domain;
 using SearchItunes.Data;
-using SearchItunes.Domain;
 
-namespace SearchItunes.Application
+namespace Itunes.Application
 {
     public interface IGetItuneClicks
     {

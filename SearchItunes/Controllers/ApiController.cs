@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
+using Itunes.Application;
+using Itunes.Models;
 using Microsoft.AspNetCore.Mvc;
-using SearchItunes.Application;
-using SearchItunes.Models;
 
-namespace SearchItunes.Controllers
+namespace Itunes.Controllers
 {
     [Route("[controller]")]
     [ApiController]
@@ -20,14 +20,16 @@ namespace SearchItunes.Controllers
         [Route("ituneClick")]
         public IActionResult ItuneClick(ItunesViewModel viewModel)
         {
-            _upsertItuneClicks.Execute(viewModel);
+            if (viewModel.CollectionViewUrl == null)
+                return BadRequest();
 
-            if (viewModel.CollectionViewUrl != null)
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = viewModel.CollectionViewUrl,
-                    UseShellExecute = true
-                });
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = viewModel.CollectionViewUrl,
+                UseShellExecute = true
+            });
+
+            _upsertItuneClicks.Execute(viewModel);
 
             return Ok();
         }

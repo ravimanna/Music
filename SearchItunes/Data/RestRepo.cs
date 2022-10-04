@@ -3,7 +3,7 @@ using System.Net;
 using Microsoft.Extensions.Options;
 using RestSharp;
 
-namespace SearchItunes.Data
+namespace Itunes.Data
 {
     public interface IRestRepo
     {

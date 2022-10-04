@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using SearchItunes.Application.Shared;
+using Itunes.Application.Shared;
+using Itunes.Data;
+using Itunes.Models;
 using SearchItunes.Data;
-using SearchItunes.Models;
 
-namespace SearchItunes.Application
+namespace Itunes.Application
 {
     public interface IGetItunes
     {

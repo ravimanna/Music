@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using SearchItunes.Domain;
-using SearchItunes.Models;
+using Itunes.Domain;
+using Itunes.Models;
 
-namespace SearchItunes.Application.Shared
+namespace Itunes.Application.Shared
 {
     public class Mappings : Profile
     {

@@ -1,9 +1,9 @@
-﻿using SearchItunes.Application.Shared;
+﻿using Itunes.Application.Shared;
+using Itunes.Domain;
+using Itunes.Models;
 using SearchItunes.Data;
-using SearchItunes.Domain;
-using SearchItunes.Models;
 
-namespace SearchItunes.Application
+namespace Itunes.Application
 {
     public interface IUpsertItuneClick
     {

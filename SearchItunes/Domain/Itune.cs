@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SearchItunes.Domain
+namespace Itunes.Domain
 {
     public class Itune
     {

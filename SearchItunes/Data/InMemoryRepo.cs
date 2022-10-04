@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using SearchItunes.Domain;
+using Itunes.Data;
+using Itunes.Domain;
 
 // ReSharper disable All
 

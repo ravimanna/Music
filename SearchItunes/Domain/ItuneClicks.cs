@@ -1,4 +1,4 @@
-﻿namespace SearchItunes.Domain
+﻿namespace Itunes.Domain
 {
     public class ItuneClicks
     {

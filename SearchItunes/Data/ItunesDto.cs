@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using SearchItunes.Domain;
+using Itunes.Domain;
 
-namespace SearchItunes.Data
+namespace Itunes.Data
 {
     public class ItunesDto
     {
