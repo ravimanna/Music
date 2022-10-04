@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace SearchItunes.Test
+namespace Itunes.Test
 {
     public class GetItunesShould
     {
